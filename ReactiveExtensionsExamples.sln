@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationOperators", "CombinationOperators\CombinationOperators.csproj", "{2BF0B114-1963-475D-8562-2308CE07A2DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardGroupie", "KeyboardGroupie\KeyboardGroupie.csproj", "{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorDashboard", "SensorDashboard\SensorDashboard.csproj", "{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Debug|x86.ActiveCfg = Debug|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Debug|x86.Build.0 = Debug|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Release|Any CPU.ActiveCfg = Release|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Release|x86.ActiveCfg = Release|x86
+		{2BF0B114-1963-475D-8562-2308CE07A2DB}.Release|x86.Build.0 = Release|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Debug|x86.ActiveCfg = Debug|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Debug|x86.Build.0 = Debug|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Release|Any CPU.ActiveCfg = Release|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Release|x86.ActiveCfg = Release|x86
+		{BF8FAF11-2FE0-44AA-9BD4-0FFD072D59B9}.Release|x86.Build.0 = Release|x86
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{68A0ACC3-2ACB-479C-938A-7D54A6E07CC1}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Reactive.Linq;
 using GalaSoft.MvvmLight;
 using SessionDashboard.Model;
@@ -20,7 +21,7 @@ namespace SessionDashboard.ViewModel
         private readonly IDataService _dataService;
         private readonly ObservableCollection<SampleGroup> _sampleGroups = new ObservableCollection<SampleGroup>();
         private readonly ObservableCollection<string> _warnings = new ObservableCollection<string>();
-
+        
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -36,9 +37,11 @@ namespace SessionDashboard.ViewModel
                                                                                                                      Samples = new ObservableCollection<double>()
                                                                                                                  };
                                                                                            SampleGroups.Add(sampleGroup);
-                                                                                           
-                                                                                           grp.Scan(new { sum = .0, count = 0 }, (agg, sample) => new { sum = agg.sum + sample.SensorValue, count = agg.count + 1 })
-                                                                                                    .Select(agg => agg.sum / agg.count).ObserveOnDispatcher().Subscribe(average => sampleGroup.AverageMeasurement = average);
+
+                                                                                           grp.Buffer(5).Subscribe(window => sampleGroup.AverageMeasurement = window.Average(avg => avg.SensorValue));
+
+                                                                                           /*grp.Scan(new { sum = .0, count = 0 }, (agg, sample) => new { sum = agg.sum + sample.SensorValue, count = agg.count + 1 })
+                                                                                                    .Select(agg => agg.sum / agg.count).ObserveOnDispatcher().Subscribe(average => sampleGroup.AverageMeasurement = average);*/
                                                                                            
                                                                                            grp.Sample(TimeSpan.FromSeconds(1)).ObserveOnDispatcher().Select(sample => sample.SensorValue).Subscribe(sampleGroup.Samples.Add);
                                                                                        });

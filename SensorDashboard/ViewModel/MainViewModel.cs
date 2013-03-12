@@ -7,24 +7,13 @@ using SessionDashboard.Model;
 
 namespace SessionDashboard.ViewModel
 {
-    /// <summary>
-    /// This class contains properties that the main View can data bind to.
-    /// <para>
-    /// Use the <strong>mvvminpc</strong> snippet to add bindable properties to this ViewModel.
-    /// </para>
-    /// <para>
-    /// See http://www.galasoft.ch/mvvm/getstarted
-    /// </para>
-    /// </summary>
+   
     public class MainViewModel : ViewModelBase
     {
         private readonly IDataService _dataService;
         private readonly ObservableCollection<SampleGroup> _sampleGroups = new ObservableCollection<SampleGroup>();
         private readonly ObservableCollection<string> _warnings = new ObservableCollection<string>();
         
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
         public MainViewModel(IDataService dataService)
         {
             _dataService = dataService;
@@ -53,12 +42,6 @@ namespace SessionDashboard.ViewModel
 
 
 
-        ////public override void Cleanup()
-        ////{
-        ////    // Clean up if needed
-
-        ////    base.Cleanup();
-        ////}
         public ObservableCollection<SampleGroup> SampleGroups
         {
             get { return _sampleGroups; }
